@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Блочные и строчные элементы</title>
+  <style>
+    /* рамки только для наглядности: так видно, сколько места занимает каждый элемент */
+    .show-block { outline: 3px solid #2D7FF9; }
+    .show-inline { outline: 3px solid #F07818; }
+  </style>
+</head>
+<body>
+  <h1>Блочные элементы</h1>
+  <h2 class="show-block">Заголовок короткий, а рамка — до края</h2>
+  <p class="show-block">Абзац тоже занимает всю ширину.</p>
+  <div class="show-block">И div тоже.</div>
+
+  <h1>Строчные элементы</h1>
+  <p>
+    Пиксель — <strong class="show-inline">рыжий кот</strong>, который любит
+    <a class="show-inline" href="#">тёплые клавиатуры</a> и
+    <span class="show-inline">мягкие пледы</span>.
+  </p>
+
+  <h1>span и div внутри предложения</h1>
+  <p>Пиксель спит <span class="show-inline">16 часов</span> в сутки.</p>
+  <!-- Ошибка: div внутри p. Открой DevTools (F12) и посмотри, как браузер разрезал абзац -->
+  <p>Пиксель спит <div class="show-block">16 часов</div> в сутки.</p>
+
+  <h1>Ширина у строчного элемента</h1>
+  <p>Мур <span class="show-inline" style="width: 300px;">span</span> мяу — ширина не работает.</p>
+  <p>Мур <span class="show-inline" style="display: inline-block; width: 300px;">span</span> мяу — с inline-block работает.</p>
+
+  <h1>Два div без стилей</h1>
+  <div class="show-block" style="width: 200px;">1</div>
+  <div class="show-block" style="width: 200px;">2</div>
+</body>
+</html>

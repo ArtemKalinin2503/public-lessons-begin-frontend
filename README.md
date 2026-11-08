@@ -8,6 +8,7 @@
 |---|---|---|
 | 1 | Создай свой первый сайт за 8 минут: HTML, CSS и JavaScript с нуля | [01-first-site](01-first-site) |
 | 2 | HTML с нуля, урок 1: все главные теги | [02-html-overview](02-html-overview) |
+| 3 | HTML с нуля, урок 2: блочные и строчные элементы | [03-block-inline](03-block-inline) |
 
 ## Как скачать
 
